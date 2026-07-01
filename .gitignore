@@ -1,0 +1,11 @@
+# --- Kompajlirani izlaz (Obavezno) ---
+app/bin/
+
+# --- Logovi i privremeni lock fajlovi (Obavezno) ---
+app/log.xml*
+*.lck
+
+# --- Eclipse IDE specifični fajlovi (Preporučeno) ---
+.settings/
+.classpath
+.project

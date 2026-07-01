@@ -1,0 +1,39 @@
+
+.background {
+    -fx-background-color: linear-gradient(rgb(30, 144, 255) 0%, rgb(30, 144, 255) 100%),
+    	linear-gradient(rgb(30, 144, 255), rgb(235, 206, 235)),
+    	linear-gradient(rgb(235, 206, 235) 0%, rgb(135, 206, 235) 100%);
+}
+
+.text-area .content {
+	-fx-padding: 10px;
+    -fx-background-color: linear-gradient(rgb(235, 206, 235), rgb(235, 206, 235)),
+    	linear-gradient(rgb(235, 206, 235), rgb(235, 206, 235)),
+    	linear-gradient(rgb(235, 206, 235) 0%, #ADD8E6 100%);
+    -fx-background-insets: 2, 2, 2;
+    -fx-background-radius: 2, 2, 2;
+    -fx-text-alignment: center ;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+}
+
+.button {
+    -fx-font-size: 10;
+    -fx-text-fill: #F0FFFF;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-background-color: linear-gradient(rgb(30, 144, 255) 0%, rgb(180, 144, 255) 100%),
+    	linear-gradient(rgb(235, 206, 235), rgb(235, 206, 235)),
+    	linear-gradient(#ADD8E6 0%, rgb(30, 144, 255) 100%);
+    -fx-background-insets: 0, 1, 3;
+    -fx-background-radius: 1, 2, 3;
+    -fx-text-fill: white;
+}
+
+.tekst {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
