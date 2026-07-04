@@ -1,10 +1,18 @@
-# Crypto Code Obfuscator
+<div align="center">
+  <h1>Crypto Code Obfuscator</h1> 
+</div>
+<br>
 
-*Aplikacija za kriptografsku zaštitu (enkripciju), digitalno potpisivanje i provjeru integriteta izvornog koda, zasnovana na infrastrukturi javnog ključa (PKI).*
+<div style="page-break-before: always;"></div>
+
+Aplikacija za kriptografsku zaštitu (enkripciju), digitalno potpisivanje i provjeru integriteta izvornog koda, zasnovana na infrastrukturi javnog ključa (PKI).
 
 Korisnik bira datoteku sa izvornim kodom i šalje je drugom registrovanom korisniku u zaštićenom obliku — samo primalac, koristeći svoj privatni ključ, može datoteku dekriptovati i pritom automatski provjeriti da sadržaj nije izmijenjen u prenosu niti da je poslat od strane nekog drugog. Nakon uspješne dekripcije, primalac po želji može odmah kompajlirati i pokrenuti dobijeni kod, bez napuštanja aplikacije.
 
-[![Prijava na sistem](https://github.com/VukovicSvetozar/crypto-code-obfuscator/raw/main/assets/1.png)](/VukovicSvetozar/crypto-code-obfuscator/blob/main/assets/1.png) [![Glavna strana aplikacije](https://github.com/VukovicSvetozar/crypto-code-obfuscator/raw/main/assets/2.png)](/VukovicSvetozar/crypto-code-obfuscator/blob/main/assets/2.png)
+<div align="center">
+  <img src="assets/1.png" width="24%" alt="Simulacija u radu - detalj 1">&nbsp;
+  <img src="assets/2.png" width="41%" alt="Simulacija u radu - detalj 2">
+</div>
 
 ---
 
@@ -96,14 +104,6 @@ Simetrični algoritam i algoritam potpisa pošiljalac bira zasebno za svaku poru
 
 ---
 
-## 🖥️ Pregled grafičkog interfejsa
-
-Aplikacija je izgrađena u **JavaFX**-u (FXML + CSS), sa prozorom za prijavu, glavnom stranom sa dva taba (enkripcija/dekripcija) i posebnim prozorom za kompajliranje i izvršavanje dekriptovanog koda.
-
-> Snimci ekrana se nalaze u folderu [`assets/`](assets).
-
----
-
 ## 💻 Tehnologije i alati
 
 - **Jezik:** Java
@@ -140,25 +140,4 @@ Aplikacija je izgrađena u **JavaFX**-u (FXML + CSS), sa prozorom za prijavu, gl
 
 ---
 
-## 📁 Struktura projekta
 
-```
-app/
-├── src/
-│   ├── application/   → ulazna tačka aplikacije
-│   ├── controller/    → JavaFX kontroleri (prijava, enkripcija, dekripcija, izvršavanje)
-│   ├── model/         → domenski model (Korisnik)
-│   ├── utility/       → kriptografske i pomoćne klase
-│   └── view/          → FXML definicije ekrana
-├── lib/                → eksterne biblioteke (Bouncy Castle i dr.)
-├── lista korisnika/, sertifikati/, crl/, korisnici/, izvorni kodovi/
-│                     → podaci aplikacije (vidi tabelu perzistencije)
-docs/                 → tekst projektnog zadatka
-assets/               → snimci ekrana za ovaj README
-```
-
----
-
-## 👤 Autor
-
-Crypto Code Obfuscator je razvijen kao projektni zadatak iz predmeta **Kriptografija i računarska/kompjuterska zaštita**, na **Elektrotehničkom fakultetu Univerziteta u Banjoj Luci**, autora **Svetozara Vukovića**.
